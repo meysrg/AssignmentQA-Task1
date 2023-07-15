@@ -1,0 +1,4 @@
+{"testCaseName":"Test Cases/TC01-GET ListUser","testCaseId":"Test Cases/TC01-GET ListUser","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC02-GET SingleUser","testCaseId":"Test Cases/TC02-GET SingleUser","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC03-PUT Update","testCaseId":"Test Cases/TC03-PUT Update","iterationVariableName":""}
+{"testCaseName":"Test Cases/TC04-POST Register Successful","testCaseId":"Test Cases/TC04-POST Register Successful","iterationVariableName":""}

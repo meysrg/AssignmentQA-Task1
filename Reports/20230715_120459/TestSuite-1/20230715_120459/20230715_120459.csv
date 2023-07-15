@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TestSuite-1,,,,2023-07-15 12:05:02,2023-07-15 12:05:08,6.739s,PASSED
+,,,,,,,
+Test Cases/TC01-GET ListUser,,,,2023-07-15 12:05:02,2023-07-15 12:05:05,3.285s,PASSED
+"response = sendRequest(findTestObject(""GET/GET-ListUsers""))",,"
+",,2023-07-15 12:05:02,2023-07-15 12:05:05,2.751s,PASSED
+"verifyResponseStatusCode(response, 200)",,"
+",,2023-07-15 12:05:05,2023-07-15 12:05:05,0.018s,PASSED
+"verifyElementsCount(response, ""data.first_name"", 6)",,"
+",,2023-07-15 12:05:05,2023-07-15 12:05:05,0.067s,PASSED
+"verifyElementPropertyValue(response, ""data[5].first_name"", ""Tracey"")",,,,2023-07-15 12:05:05,2023-07-15 12:05:05,0.033s,PASSED
+,,,,,,,
+Test Cases/TC02-GET SingleUser,,,,2023-07-15 12:05:05,2023-07-15 12:05:06,1.183s,PASSED
+"response = sendRequest(findTestObject(""GET/GET-SingleUser""))",,,,2023-07-15 12:05:05,2023-07-15 12:05:06,0.797s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-15 12:05:06,2023-07-15 12:05:06,0.006s,PASSED
+"verifyElementPropertyValue(response, ""data.id"", ""5"")",,,,2023-07-15 12:05:06,2023-07-15 12:05:06,0.025s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""charles.morris@reqres.in"")",,,,2023-07-15 12:05:06,2023-07-15 12:05:06,0.020s,PASSED
+"verifyElementPropertyValue(response, ""data.first_name"", ""Charles"")",,,,2023-07-15 12:05:06,2023-07-15 12:05:06,0.019s,PASSED
+,,,,,,,
+Test Cases/TC03-PUT Update,,,,2023-07-15 12:05:06,2023-07-15 12:05:07,0.937s,PASSED
+"response = sendRequest(findTestObject(""PUT/PUT-Update""))",,,,2023-07-15 12:05:07,2023-07-15 12:05:07,0.625s,PASSED
+"verifyResponseStatusCode(response, 200)",,"
+",,2023-07-15 12:05:07,2023-07-15 12:05:07,0.004s,PASSED
+,,,,,,,
+Test Cases/TC04-POST Register Successful,,,,2023-07-15 12:05:07,2023-07-15 12:05:08,1.028s,PASSED
+"response = sendRequest(findTestObject(""POST/POS-Register Successful""))",,,,2023-07-15 12:05:08,2023-07-15 12:05:08,0.715s,PASSED
+"verifyResponseStatusCode(response, 200)",,"
+",,2023-07-15 12:05:08,2023-07-15 12:05:08,0.003s,PASSED
